@@ -1,0 +1,25 @@
+📦 ES Modules (import/export) in Node.js – Summary
+Node.js supports modern import/export syntax like React
+
+By default, Node uses old require() unless told otherwise
+
+To use import in .js files, you must add this in package.json:
+
+json file
+"type": "module"
+Then you can write:
+
+js file
+
+// greet.js
+export default function greet(name) {
+  console.log(`Hello ${name}`);
+}
+
+// index.js
+import greet from "./greet.js";
+greet("Nirmal");
+✅ Cleaner syntax
+✅ Modern & preferred for new projects
+✅ Similar to how React works
+
