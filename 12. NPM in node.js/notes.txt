@@ -1,0 +1,126 @@
+https://npmjs.com/
+World's biggest code store 🔥
+When we install Node.js we automatically get "npm" for free.
+
+In NPM official site, you can find anything — from small utility functions to large frameworks/libraries like "react", "vue", etc.
+
+NPM allows us to do three things:
+1. Reuse our own code in other projects
+2. Use code written by other developers
+3. Share our own solutions
+
+Since it's open source, anyone can upload anything.
+So it's on us to choose good packages.
+
+Pro Tip:
+If the number of weekly downloads is high, that’s a good package.
+
+------------------------------------------------
+
+npm - Global command, comes with Node
+
+Version Checking:
+npm --version
+npm -v
+
+------------------------------------------------
+
+Local Dependencies (only for this project):
+npm install <package-name>
+npm i <package-name>  // shorthand
+
+------------------------------------------------
+
+Global Dependencies (usable in any project):
+npm install -g <package-name>
+npm i -g <package-name>  // shorthand
+sudo npm install -g <package-name>  // Mac/Linux
+
+------------------------------------------------
+
+Uninstalling Dependencies:
+npm uninstall <package-name>
+
+------------------------------------------------
+
+What is a package?
+A package is a folder containing code + package.json.
+Examples: express, react, lodash.
+
+------------------------------------------------
+
+What is package.json?
+It’s a manifest file that stores project info and dependencies.
+
+Created using:
+npm init        // step-by-step
+npm init -y     // auto-create with default values
+
+------------------------------------------------
+
+Why is package.json important?
+It records project dependencies and config.
+When someone runs `npm install`, it auto-installs all listed packages.
+
+------------------------------------------------
+
+Can we edit package.json?
+Yes. You can change values or add new ones.
+Just use valid JSON format.
+You can even add custom keys, but tools will ignore them unless used by you.
+
+------------------------------------------------
+
+Why the name package.json?
+Every Node project is treated as a package.
+.json because it uses JSON format (easy for computers to read).
+
+------------------------------------------------
+
+package-lock.json
+Auto-created by npm.
+It locks the exact versions of all installed packages.
+Keeps your project stable across devices.
+You don’t edit it manually.
+
+------------------------------------------------
+
+.npmrc
+Optional config file to customize npm behavior (not always used).
+
+------------------------------------------------
+
+nodemon
+A dev tool that auto-restarts Node app on file save.
+Install:
+npm install -D nodemon
+
+Usage:
+npx nodemon index.js
+Or add to scripts:
+"start": "nodemon index.js"
+
+------------------------------------------------
+
+.gitignore
+Tells Git which files/folders to ignore.
+Example:
+node_modules/
+.env
+
+------------------------------------------------
+
+dependencies vs devDependencies
+
+dependencies → needed for app to run
+Examples: express, react, axios
+
+devDependencies → needed only while developing
+Examples: nodemon, prettier, eslint
+
+Install dev dependencies:
+npm install -D <package-name>
+
+------------------------------------------------
+
+You're now ready to manage NPM in any Node project ✅
