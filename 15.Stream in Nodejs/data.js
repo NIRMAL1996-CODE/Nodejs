@@ -2,9 +2,9 @@
 import fs from "fs";
 
 // Step: Write numbers from 0 to 10000 into test.txt
-for (let i = 0; i <= 10000; i++) {
+for (let i = 0; i <= 10; i++) {
   // fs.writeFileSync(path, data, options)
-  fs.writeFileSync("./test.txt", `${i}\n`, { flag: "a" }); 
+  fs.writeFileSync("./hello.txt", `${i}\n`, { flag: "a" }); 
 
   //`${i}\n`	Data to write (each number in new line)
 
